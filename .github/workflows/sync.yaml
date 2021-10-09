@@ -9,10 +9,12 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          path: branding
       - name: Import Images
         uses: primer/figma-action@v1.0.0-alpha.3
         with:
-          args: "format=png outputDir=./branding/"
+          args: "format=png outputDir=./branding/branding/"
         env:
           FIGMA_FILE_URL: "https://www.figma.com/file/2KN6A1IISYqTEnlbz3X8ks/branding"
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
@@ -21,5 +23,6 @@ jobs:
         with:
           delete-branch: true
           branch: figma/branding
+          path: branding
           title: Update branding
           labels: enhancement
