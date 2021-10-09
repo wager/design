@@ -18,7 +18,8 @@ jobs:
           FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
-        delete-branch: true
-        branch: figma/branding
-        title: Update branding
-        labels: enhancement
+        with:
+          delete-branch: true
+          branch: figma/branding
+          title: Update branding
+          labels: enhancement
