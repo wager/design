@@ -19,3 +19,4 @@ jobs:
           figma-file-name: branding
           figma-token: ${{ secrets.FIGMA_TOKEN }}
           format: ${{ matrix.format }}
+          personal-access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
