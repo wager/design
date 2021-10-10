@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-20.04
     container: ubuntu:20.04
     steps:
+      - name: Setup Git
+        run: apt update && apt install -y git
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Sync Components
