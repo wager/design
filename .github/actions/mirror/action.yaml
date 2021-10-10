@@ -13,7 +13,7 @@ inputs:
   format:
     description: Format in which to export components. (png, svg, jpg)
     required: true
-    default: png
+    default: svg
 runs:
   using: "composite"
   steps:
