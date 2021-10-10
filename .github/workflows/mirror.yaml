@@ -1,4 +1,4 @@
-name: import
+name: mirror
 on:
   workflow_dispatch:
   schedule:
@@ -9,8 +9,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Import Components
-        uses: ./.github/actions/import
+      - name: Mirror Components
+        uses: ./.github/actions/mirror
         with:
           figma-file-key: 2KN6A1IISYqTEnlbz3X8ks
           figma-file-name: branding
