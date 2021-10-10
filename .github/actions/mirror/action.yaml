@@ -14,9 +14,6 @@ inputs:
     description: Format in which to export components. (png, svg, jpg)
     required: true
     default: svg
-  personal-access-token:
-    description: Repo-scoped personal access token.
-    required: true
 runs:
   using: "composite"
   steps:
