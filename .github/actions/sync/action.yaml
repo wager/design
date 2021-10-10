@@ -7,6 +7,9 @@ inputs:
   figma-file-name:
     description: Name of the Figma file. (e.g., branding)
     required: true
+  figma-token:
+    description: Figma access token.
+    required: true
   format:
     description: Format in which to export components. (png, svg, jpg)
     required: true
@@ -20,7 +23,7 @@ runs:
         args: "format=${{ inputs.format }} outputDir=./${{ inputs.figma-file-name }}/"
       env:
         FIGMA_FILE_URL: "https://www.figma.com/file/${{ inputs.figma-file-key }}/${{ inputs.figma-file-name }}"
-        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        FIGMA_TOKEN: ${{ inputs.figma-token }}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
