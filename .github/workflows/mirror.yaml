@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Mirror ${{ matrix.format }}
+      - name: Mirror ${{ matrix.figma-file-name}}/${{ matrix.format }}
         uses: ./.github/actions/mirror
         with:
           figma-file-key: ${{ matrix.figma-file-key }}
