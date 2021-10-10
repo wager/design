@@ -5,6 +5,7 @@ on:
     - cron: '*/15 * * * *'
 jobs:
   branding:
+    runs-on: ubuntu-20.04
     container: ubuntu:20.04
     steps:
       - name: Checkout Repository
