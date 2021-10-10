@@ -24,6 +24,8 @@ runs:
       env:
         FIGMA_FILE_URL: "https://www.figma.com/file/${{ inputs.figma-file-key }}/${{ inputs.figma-file-name }}"
         FIGMA_TOKEN: ${{ inputs.figma-token }}
+    - name: Change Permissions
+      run: chmod -R 777 ./${{ inputs.figma-file-name }}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
