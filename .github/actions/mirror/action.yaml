@@ -14,6 +14,9 @@ inputs:
     description: Format in which to export components. (png, svg, jpg)
     required: true
     default: svg
+  personal-access-token:
+    description: Repo-scoped personal access token.
+    required: true
 runs:
   using: "composite"
   steps:
@@ -50,6 +53,6 @@ runs:
       if: steps.create-pull-request.outputs.pull-request-operation == 'created'
       uses: peter-evans/enable-pull-request-automerge@v1
       with:
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        token: ${{ inputs.personal-access-token }}
         pull-request-number: ${{ steps.create-pull-request.outputs.pull-request-number }}
         merge-method: squash
