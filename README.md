@@ -11,15 +11,11 @@
   </a>
 </p>
 
-# Structure
-
 ```bash
 design/
 ├── .github/                        Mirror workflows.
 └── branding                        Branding assets.
 ```
-
-# Features
 
 Assets can be mirrored in other repositories by adding this repository as a submodule.
 
