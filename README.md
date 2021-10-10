@@ -13,8 +13,8 @@
 
 ```bash
 design/
-├── .github/ # Mirror workflows.
-└── branding # Branding assets.
+├── .github/  # Mirror workflows.
+└── branding  # Branding assets.
 ```
 
 Assets can be mirrored in other repositories by adding this repository as a submodule.
