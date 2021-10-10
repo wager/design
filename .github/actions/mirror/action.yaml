@@ -17,6 +17,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Delete Existing
+      shell: bash
+      run: rm -rf ./${{ inputs.figma-file-name }}
     - name: Export Components
       uses: primer/figma-action@v1.0.0-alpha.3
       with:
