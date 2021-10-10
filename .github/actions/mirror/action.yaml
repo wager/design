@@ -17,6 +17,10 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Checkout main
+      uses: actions/checkout@v2
+      with:
+        ref: main
     - name: Delete Existing
       shell: bash
       run: rm -rf ./${{ inputs.figma-file-name }}/${{ inputs.format }}
