@@ -14,6 +14,9 @@ inputs:
     description: Format in which to export components. (png, svg, jpg)
     required: true
     default: svg
+  github-token:
+    description: GitHub token.
+    required: true
 runs:
   using: "composite"
   steps:
@@ -50,6 +53,6 @@ runs:
     - name: Merge Pull Request
       uses: juliangruber/merge-pull-request-action@v1
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ inputs.github-token }}
         number: ${{ steps.create-pull-request.outputs.pull-request-number }}
         method: squash
