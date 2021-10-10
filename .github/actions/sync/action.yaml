@@ -25,6 +25,7 @@ runs:
         FIGMA_FILE_URL: "https://www.figma.com/file/${{ inputs.figma-file-key }}/${{ inputs.figma-file-name }}"
         FIGMA_TOKEN: ${{ inputs.figma-token }}
     - name: Change Permissions
+      shell: bash
       run: chmod -R 777 ./${{ inputs.figma-file-name }}
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
