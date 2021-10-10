@@ -1,0 +1,30 @@
+name: Sync
+description: Sync components from Figma to GitHub
+inputs:
+  figma-file-key:
+    description: Key that identifies the Figma file. (e.g., 2KN6A1IISYqTEnlbz3X8ks)
+    required: true
+  figma-file-name:
+    description: Name of the Figma file. (e.g., branding)
+    required: true
+  format:
+    description: Format in which to export components. (png, svg, jpg)
+    required: true
+    default: png
+runs:
+  using: "composite"
+  steps:
+    - name: Import Components
+      uses: primer/figma-action@v1.0.0-alpha.3
+      with:
+        args: "format=${{ inputs.format }} outputDir=./${{ inputs.figma-file-name }}/"
+      env:
+        FIGMA_FILE_URL: "https://www.figma.com/file/${{ inputs.figma-file-key }}/${{ inputs.figma-file-name }}"
+        FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        delete-branch: true
+        branch: figma/${{ inputs.figma-file-name }}
+        title: Import ${{ inputs.figma-file-name }} from Figma
+        labels: enhancement
