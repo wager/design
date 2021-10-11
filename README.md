@@ -17,6 +17,12 @@ design/
 └── branding  # Branding assets.
 ```
 
+Mirror is automatically triggered every 15 minutes, but can also be [manually] triggered.
+
+```bash
+gh workflow run mirror.yaml
+```
+
 Assets can be mirrored in other repositories by adding this repository as a submodule.
 
 ```bash
@@ -31,12 +37,6 @@ Submodules can be kept up-to-date using the following `.github/renovate.json` co
     "enabled": true
   }
 }
-```
-
-Mirror is automatically triggered every 15 minutes, but can also be [manually] triggered.
-
-```bash
-gh workflow run mirror.yaml
 ```
 
 [manually]:
