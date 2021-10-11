@@ -29,7 +29,7 @@ Assets can be mirrored in other repositories by adding this repository as a subm
 git submodule add https://github.com/wager/design
 ```
 
-Submodules can be kept up-to-date using [Renovate].
+Submodules can be kept up-to-date by [Renovate].
 
 ```json
 {
