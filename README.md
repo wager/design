@@ -23,6 +23,16 @@ Assets can be mirrored in other repositories by adding this repository as a subm
 git submodule add https://github.com/wager/design
 ```
 
+Submodules can be kept up-to-date using the following `.github/renovate.json` configuration.
+
+```json
+{
+  "git-submodules": {
+    "enabled": true
+  }
+}
+```
+
 Mirror is automatically triggered every 15 minutes, but can also be [manually] triggered.
 
 ```bash
