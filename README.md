@@ -29,7 +29,7 @@ Assets can be mirrored in other repositories by adding this repository as a subm
 git submodule add https://github.com/wager/design
 ```
 
-Submodules can be kept up-to-date using the following `.github/renovate.json` configuration.
+Submodules can be kept up-to-date using [Renovate].
 
 ```json
 {
@@ -39,5 +39,7 @@ Submodules can be kept up-to-date using the following `.github/renovate.json` co
 }
 ```
 
+[Renovate]:
+  https://github.com/renovatebot/renovate
 [manually]:
   https://github.com/wager/design/actions/workflows/mirror.yaml
