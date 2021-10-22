@@ -8,11 +8,13 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        figma-file-name: [branding]
+        figma-file-name: [branding, architecture]
         format: [png, svg, jpg]
         include:
           - figma-file-name: branding
             figma-file-key: 2KN6A1IISYqTEnlbz3X8ks
+          - figma-file-name: architecture
+            figma-file-key: cBAORqCYFhKdtHQcHYoMXH
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
