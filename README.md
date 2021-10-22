@@ -13,9 +13,10 @@
 
 ```bash
 design/
-├── .github/    # Mirror workflows.
-├── branding    # Branding assets.
-└── system.css  # Design system.
+├── .github/      # Mirror workflows.
+├── branding      # Branding assets.
+├── architecture  # Architecture diagrams.
+└── system.css    # Design system.
 ```
 
 Mirror is automatically triggered every 15 minutes, but can also be [manually] triggered.
