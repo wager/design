@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "area/dependencies",
+    "kind/chore",
+    "priority/low"
+  ]
+}
