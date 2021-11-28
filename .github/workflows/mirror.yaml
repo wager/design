@@ -2,7 +2,7 @@ name: mirror
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
 jobs:
   mirror:
     runs-on: ubuntu-20.04
