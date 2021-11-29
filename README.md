@@ -14,8 +14,8 @@
 ```bash
 design/
 ├── .github/      # Mirror workflows.
-├── branding      # Branding assets.
 ├── architecture  # Architecture diagrams.
+├── branding      # Branding assets.
 └── system.css    # Design system.
 ```
 
