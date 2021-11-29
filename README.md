@@ -19,7 +19,7 @@ design/
 └── system.css    # Design system.
 ```
 
-Mirror is automatically triggered every 15 minutes, but can also be [manually] triggered.
+Mirror is automatically triggered every 5 minutes, but can also be [manually] triggered.
 
 ```bash
 gh workflow run mirror.yaml
