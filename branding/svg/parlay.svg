@@ -7,12 +7,12 @@
 <path d="M215.8 52C241.933 52 263.133 58.6667 279.4 72C295.667 85.3333 303.8 105.467 303.8 132.4C303.8 146.533 300.733 160.133 294.6 173.2C288.467 186 278.733 196.533 265.4 204.8C252.333 212.8 235.133 216.8 213.8 216.8H169.8V336H150.2V52H215.8ZM213.8 198C227.667 198 239.133 195.867 248.2 191.6C257.533 187.067 264.733 181.467 269.8 174.8C275.133 167.867 278.867 160.667 281 153.2C283.4 145.733 284.6 138.8 284.6 132.4C284.6 114.267 278.733 99.4667 267 88C255.533 76.5333 239.133 70.8 217.8 70.8H169.8V198H213.8Z" fill="#5D6BD2"/>
 </g>
 <rect x="150" y="77" width="26" height="112" fill="#8BBEB2"/>
-<ellipse cx="160" cy="332.5" rx="24" ry="24.5" fill="#1F2A77"/>
-<circle cx="160" cy="207" r="24" fill="#1F2A77"/>
-<circle cx="160" cy="207" r="7" fill="white"/>
-<circle cx="160" cy="332" r="7" fill="white"/>
-<circle cx="160" cy="62" r="24" fill="#1F2A77"/>
-<circle cx="160" cy="62" r="7" fill="white"/>
+<circle cx="168" cy="340" r="32" fill="#1F2A77"/>
+<circle cx="160" cy="209" r="32" fill="#1F2A77"/>
+<circle cx="160" cy="209" r="9" fill="white"/>
+<circle cx="168" cy="339" r="9" fill="white"/>
+<circle cx="160" cy="61" r="32" fill="#1F2A77"/>
+<circle cx="160" cy="61" r="9" fill="white"/>
 <defs>
 <filter id="filter0_b_215_40" x="152.2" y="54" width="161.6" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
