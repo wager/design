@@ -17,7 +17,7 @@ jobs:
             figma-file-key: cBAORqCYFhKdtHQcHYoMXH
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Mirror ${{ matrix.figma-file-name}}/${{ matrix.format }}
         uses: ./.github/actions/mirror
         with:
